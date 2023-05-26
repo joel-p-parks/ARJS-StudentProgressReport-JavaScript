@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Student Progress Report</title>
+    <meta name="description" content="ARJS Report viewer" />
+    <meta name="author" content="GrapeCity" />
+    <link rel="stylesheet" href="https://cdn.grapecity.com/activereportsjs/4.latest/styles/ar-js-ui.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.grapecity.com/activereportsjs/4.latest/styles/ar-js-viewer.css" type="text/css" />
+    <script src="https://cdn.grapecity.com/activereportsjs/4.latest/dist/ar-js-core.js"></script>
+    <script src="https://cdn.grapecity.com/activereportsjs/4.latest/dist/ar-js-viewer.js"></script>
+    <script src="https://cdn.grapecity.com/activereportsjs/4.latest/dist/ar-js-pdf.js"></script>
+    <script src="https://cdn.grapecity.com/activereportsjs/4.latest/dist/ar-js-tabular-data.js"></script>
+    <script src="https://cdn.grapecity.com/activereportsjs/4.latest/dist/ar-js-html.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+        #viewer-host {
+          width: 100%;
+          height: 100vh;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="viewer-host"></div>
+    <script>
+        var viewer = new ActiveReports.Viewer("#viewer-host");
+        viewer.open("StudentProgressReport.rdlx-json");
+    </script>
+  </body>
+</html>
